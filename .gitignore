@@ -1,0 +1,9 @@
+# モデル重み・大容量データ・キャッシュはコミットしない
+__pycache__/
+*.py[cod]
+*.bin
+*.pt
+*.pth
+*.zip
+*.pcap
+*.pcapng
