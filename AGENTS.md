@@ -11,7 +11,8 @@
 
 ## ブランチ運用
 
-- 研究用の作業は `netsec` ブランチで行い NetSec 側から参照させる
+- 動作修正（バグ修正・互換性対応）は main に直接入れ、NetSec 側の submodule は main を参照する
+- 追加機能や機能変更は feature ブランチ（`feat/<名前>` 等）で作業し、安定後に main にマージする
 - 上流追従は `git fetch origin && git rebase origin/main`（origin は上流を指す前提）
 - 上流コードへの変更は最小限にし、研究用の新機能は新規ファイルとして追加する
 - 上流バグ修正は上流PRの候補として NetSec 側 docs に記録する
